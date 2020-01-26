@@ -12,10 +12,11 @@ newBtn.addEventListener("click", () => {
             "text-center",
             "p-3",
             "bg-white",
+            "mt-4",
             "rounded",
             "shadow-lg",
             "cursor-pointer",
-            "hover:bg-green-500"
+            "hover:bg-blue-500"
         );
         newTodo.innerHTML = newText.value;
         newText.value = "";
@@ -39,17 +40,17 @@ const move = (element, destination, convertTo) => {
                 "text-red-500",
                 "line-through",
                 "hover:bg-red-500",
-                "hover:text-white"
+                "hover:text-black"
             );
-            element.classList.remove("hover:bg-green-500");
+            element.classList.remove("hover:bg-blue-500");
         } else {
             element.classList.remove(
                 "text-red-500",
                 "line-through",
                 "hover:bg-red-500",
-                "hover:text-white"
+                "hover:text-black"
             );
-            element.classList.add("hover:bg-green-500");
+            element.classList.add("hover:bg-blue-500");
         }
         destination.appendChild(element);
     }
